@@ -1,0 +1,192 @@
+body{
+    /*padding-top: 45px;*/
+}
+
+.navbar{
+    /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);*/
+    /*background-color: white;*/
+}
+
+.promo{
+    background: url("../imgs/cover.jpg");
+    background-size: cover;
+    padding: 300px 0;
+    min-height:700px;
+}
+
+.promo h1{
+    color:#ff5600;
+}
+
+.promo p{
+    text-shadow: 0px 0px 8px #ffffff;
+}
+
+.content-block{
+    width: 100%;
+    padding: 60px 0 60px 0;
+    z-index: 100;
+    position: relative;
+    background-color: #ffffff;
+    min-height:350px;
+}
+
+.underlined-title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.underlined-title h1{
+    color: #2c3e50;
+    margin: 0;
+}
+
+.underlined-title hr{
+    width: 10%;
+    border-width: 2px;
+    border-color: #16a085;
+}
+
+.underlined-title h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #95a5a6;
+}
+
+.bottom-bar{
+    height: 70px;
+    padding-top: 20px;
+    background-color: #233447;
+    position: relative;
+    bottom: 0;
+}
+
+.bottom-bar p{
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+}
+
+.date_range{
+    width: 200px !important;
+    text-align: center;
+    display: inline-block;
+}
+
+.page-spinner-bar .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.page-spinner-bar .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+.block-spinner-bar {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+}
+
+.block-spinner-bar > div {
+    margin: 0 2px;
+    width: 15px;
+    height: 15px;
+    background: #eee;
+    border-radius: 100% !important;
+    display: inline-block;
+    -webkit-animation: bounceDelay 1.4s infinite ease-in-out;
+    animation: bounceDelay 1.4s infinite ease-in-out;
+    /* Prevent first frame from flickering when animation starts */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.block-spinner-bar .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.block-spinner-bar .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+.page-spinner-bar > div,
+.block-spinner-bar > div {
+    background: #6fa7d7;
+}
+
+@-webkit-keyframes bounceDelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes bounceDelay {
+    0%, 80%, 100% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+.info-message{
+    /*text-align: center;*/
+    padding:20px 0;
+}
+
+.during{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.during .during-block:first-child{
+    margin-top: 10px;
+}
+
+.during .during-block .during-block-date{
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 15px 5px 15px;
+    border-bottom: 1px solid #e0dada;
+    color: #777575;
+}
+
+.during .during-block .during-block-time{
+    /*float: left;*/
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ada8a8;
+    border-radius: 5px;
+    color: #ada8a8;
+    font-size: 15px;
+    width:100%;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+.during .during-block .during-block-time:hover{
+    text-decoration: none;
+    border:1px solid #00b8ff;
+    color:#00b8ff;
+}
+
+.during .during-block .during-block-time.selected{
+    color:#fff;
+    border: 1px solid #00b8ff;
+    background-color: #00b8ff;
+}
+
+.info-message{
+    color: #ff2a4f;
+}

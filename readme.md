@@ -1,0 +1,6 @@
+1. Create Database
+
+~~~
+CREATE SCHEMA `IT703A1` DEFAULT CHARACTER SET utf8 ;
+~~~
+

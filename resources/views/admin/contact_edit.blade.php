@@ -39,7 +39,8 @@
                 <div class="col-md-4 inputGroupContainer">
                     <select name="customer_id" class="form-control" autocomplete="off" {{isset($extra['customer_id'])?'disabled':''}}>
                         @if(isset($extra['customer_id']))
-                            <option value="{{$extra['customer_id']}}">{{$extra['customer_id'].'-'.$extra['customer_name']}}</option>
+                            <option value="{{$extra['customer_id']}}" selected>{{$extra['customer_id'].'-'.$extra['customer_name']}}</option>
+                            <input type="hidden" name="customer_id" value="{{$extra['customer_id']}}">
                         @else
                             <option value="" {{isset($contact)&&($contact->customer_id=='')?'selected':''}}>No Company</option>
                             @foreach($extra['customers'] as $customer)

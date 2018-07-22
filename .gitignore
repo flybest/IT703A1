@@ -23,3 +23,12 @@ Homestead.json
 /.vscode
 /.vagrant
 yarn-error.log
+*/.DS_Store
+database/.DS_Store
+public/.DS_Store
+public/css/font-awesome/.DS_Store
+public/fonts/.DS_Store
+public/js/.DS_Store
+resources/.DS_Store
+.DS_Store
+.idea/*

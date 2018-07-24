@@ -15,22 +15,22 @@ class DicTitleTableSeeder extends Seeder
         'id'=>0,
         'title'=>'No Title',
     ],[
-        'id'=>2,
+        'id'=>1,
         'title'=>'Mr.',
     ],[
-        'id'=>3,
+        'id'=>2,
         'title'=>'Mrs.',
     ],[
-        'id'=>4,
+        'id'=>3,
         'title'=>'Ms.',
     ],[
-        'id'=>5,
+        'id'=>4,
         'title'=>'Miss.',
     ],[
-        'id'=>6,
+        'id'=>5,
         'title'=>'Dr.',
     ],[
-        'id'=>7,
+        'id'=>6,
         'title'=>'Prof.',
     ]];
 

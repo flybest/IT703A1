@@ -15,7 +15,7 @@ class CreateContactsTable extends Migration
     {
         Schema::create('contacts', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('title_id')->unsigned()->nullable();
+            $table->integer('title_id')->unsigned();
             $table->foreign('title_id')->references('id')->on('dic_titles')->onDelete('cascade');
             $table->string('role');
             $table->string('name');

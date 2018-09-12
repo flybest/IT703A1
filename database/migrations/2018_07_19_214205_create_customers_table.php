@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
+use \Illuminate\Support\Facades\App;
 
 class CreateCustomersTable extends Migration
 {
@@ -13,6 +15,11 @@ class CreateCustomersTable extends Migration
      */
     public function up()
     {
+
+//        $app=new App();
+//        var_dump($app['config']);
+//        var_dump($this->connection);
+
         Schema::create('customers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
@@ -27,6 +34,10 @@ class CreateCustomersTable extends Migration
             $table->string('postal_city');
             $table->string('postal_post_code');
         });
+
+//        DB::statement("ALTER TABLE customers AUTO_INCREMENT = 2018;");
+//        DB::statement("DELETE FROM sqlite_sequence WHERE name = 'customers';");
+//        DB::statement("INSERT INTO main.sqlite_sequence (name, seq) VALUES ('customers', '100');");
     }
 
     /**

@@ -14,7 +14,7 @@ class CreateTitlesTable extends Migration
     public function up()
     {
         Schema::create('dic_titles', function (Blueprint $table) {
-            $table->integer('id')->unique()->primary();
+            $table->integer('id')->unsigned()->unique()->primary();
             $table->string('title')->unique();
         });
     }

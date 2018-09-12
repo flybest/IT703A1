@@ -37,7 +37,7 @@ class DicTitleTableSeeder extends Seeder
 
     public function run()
     {
-        Title::truncate();
+//        Title::truncate();
 
 //        DB::table('dic_titles')->insert($this->data);
 
